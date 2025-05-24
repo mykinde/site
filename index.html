@@ -1,31 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Simple Inline Styled Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mykinde Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
+<body>
 
-  <div style="background-color: #333; color: white; padding: 20px; text-align: center;">
-    <h1 style="margin: 0;">My Simple Website</h1>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mykinde Page</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="py-5 text-center text-blue" style="background: url('https://i.imgur.com/Q7tdT0y.png') center center/cover no-repeat;">
+  <div class="container">
+    <h1 class="display-4">Welcome to Mykinde Page</h1>
+    <p class="lead">Clean, responsive, and simple. Built with Bootstrap 5.</p>
   </div>
+</section>
 
-  <div style="background-color: #444; padding: 10px; text-align: center;">
-    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
-    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">About</a>
-    <a href="#" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
-  </div>
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        We are a small team passionate about building elegant web solutions. This site demonstrates how to quickly set up a responsive landing page using Bootstrap.
+      </p>
+    </div>
+  </section>
 
-  <div style="padding: 20px;">
-    <h2 style="color: #333;">Welcome to My Website</h2>
-    <p style="line-height: 1.6; color: #555;">
-      This is a simple web page that uses inline styles for layout and design. 
-      While inline CSS is quick for small pages or prototypes, it's not recommended for large-scale sites.
-    </p>
-  </div>
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">Custom websites and apps tailored to your needs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">UI/UX Design</h5>
+              <p class="card-text">User-focused design for optimal experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Consulting</h5>
+              <p class="card-text">Guidance to ensure your digital strategy delivers results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div style="background-color: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%;">
+  <!-- Static Post Section -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <h2>Latest Post</h2>
+      <article>
+        <h4>ChatGPT Template</h4>
+        <p class="text-muted">Published on May 04, 2025</p>
+        <p>
+         template created via  Bootstap and ChatGPT prompt and command<a href="https://chatgpt.com/share/6831f2de-2360-8004-97de-a2267675403b">&nbsp;&nbsp;&nbsp; Visit ChatGPT A.I!</a>
+        </p>
+      </article>
+	  <article>
+        <h4>How to Use Bootstrap Effectively</h4>
+        <p class="text-muted">Published on May 24, 2025</p>
+        <p>
+          Bootstrap helps streamline front-end development by providing a robust framework of responsive utilities and components. It saves time and improves consistency.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" placeholder="Mykinde Makinde">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="g3send@gmail.com">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message:</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Tel:+2348034636384 \n Lagos, Nigeria"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
     &copy; 2025 SimpleSite. All rights reserved.
-  </div>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
